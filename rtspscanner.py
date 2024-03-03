@@ -91,6 +91,7 @@ class RTSPScanner:
                 self.portscan.q.not_full.notify_all()
         #if self.verbose:
             #print(results)
+        flaky = []
         for result in results:
             if result:
                 for path in self.paths:
